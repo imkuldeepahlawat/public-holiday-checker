@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Global Holiday Tracker",
+  "version": "1.0",
+  "description": "Shows upcoming worldwide holidays for the next 7 days.",
+  "permissions": ["activeTab"],
+  "host_permissions": [
+    "https://date.nager.at/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; connect-src https://date.nager.at;"
+  }
+}
